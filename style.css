@@ -1,0 +1,620 @@
+body {
+
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 11, 92, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.pagina-principal {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 99%;
+}
+.apresentaçao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+}
+.logo {
+    margin: 50px 50px;
+}
+.titulo-apresentaçao {
+    width: 45%;
+    background: rgb(255, 248, 0);
+    background: linear-gradient(90deg, rgba(255, 248, 0, 0.8323704481792717) 0%, rgba(36, 74, 0, 0.9500175070028011) 50%, rgba(20, 0, 0, 1) 100%);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 32px;
+    height: fit-content;
+    justify-self: end;
+    align-self: flex-end;
+    padding: 10px;
+}
+.texto-apresentaçao {
+    background: rgb(118, 114, 1);
+    background: linear-gradient(90deg, rgba(184, 178, 2, 0.832) 0%, rgba(36, 74, 0, 0.737) 50%, rgba(20, 0, 0, 1) 100%);
+    width: 65%;
+    border-radius: 5px;
+    font-size: 20px;
+    height: fit-content;
+    justify-self: end;
+    margin-top: 10px;
+    padding: 10px;
+
+
+
+
+}
+
+
+
+
+.container-informaçoes {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 95%;
+    color: #ffffff;
+    position: absolute;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: aliceblue;
+    margin-top: 10px;
+}
+
+#slider img {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 3s;
+    object-fit: cover;
+
+
+}
+
+#slider img.selected {
+
+    opacity: 1;
+}
+
+
+.serviços {
+    margin-top: 50px;
+    width: 100%;
+     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+
+}
+
+.titulo-serviços {
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 28px;
+    margin: 10px;
+
+
+}
+
+.lista-serviços {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+
+.item-servico {
+    background: #ffffffb9;
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 18px 19px 29px black;
+    margin: 10px  1px;
+  
+}
+
+.img-serviços {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.titulo-item-servico {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px;
+       letter-spacing: 2px;
+}
+
+.texto-item-servico {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+.beneficios{
+    display: flex;  
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: 500px;
+    margin: 10px 0 ;
+
+  
+}
+
+.texto-beneficios{
+    color: azure;
+    font-size: 22px;
+    letter-spacing: 1px;
+   width: 100%;
+   height: fit-content;
+   background-color: rgba(0, 0, 0, 0.82);
+    padding: 15px;
+   box-sizing: border-box;
+
+
+   
+   
+   
+}
+
+.slider-beneficios{
+   margin-top: -50px;
+
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    padding-top: 50px;
+  
+   
+}
+
+
+
+input[type=radio] {
+    display: none;
+}
+
+
+.s2, .s3, .s4, .s5{
+    scale: 0.8;
+    transition: 2.5s;
+    opacity: 10%;
+
+  
+    
+    
+}
+
+
+
+#item-m2:checked~.s2{
+    scale: 1;
+    opacity: 100%;
+    
+}
+
+#item-m3:checked~.s3{
+    scale: 1;
+    opacity: 100%;
+}
+
+#item-m4:checked~.s4{
+    scale: 1;
+    opacity: 100%;
+}
+
+#item-m5:checked~.s5{
+    scale: 1;
+    opacity: 100%;
+}
+
+
+
+
+
+#item-m2:checked~.s1 {
+margin-top: -500px;
+transition: 2.5s;
+scale: 0.8;
+opacity: 10%;
+
+
+}
+#item-m3:checked~.s1 {
+    margin-top: -1000px;
+    transition: 2.5s;
+    }
+    #item-m4:checked~.s1 {
+        margin-top: -1500px;
+        transition: 2.5s;
+        }
+        #item-m5:checked~.s1 {
+            margin-top: -2000px;
+            transition: 2.5s;
+            }
+
+
+       
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+.item-slide-beneficios{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   background-color: black;
+
+
+  
+   
+   
+   
+    
+
+}
+
+.s1{
+
+
+    background-image: url(https://i.pinimg.com/originals/f5/53/98/f5539898911e020ce0f4d7a596b5ab2a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+}
+
+
+
+.s2{
+
+    background-image: url(https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uc3RydSVDMyVBNyVDMyVBM298ZW58MHx8MHx8fDA%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.s3{
+
+    background-image: url(https://scontent.fssz10-1.fna.fbcdn.net/v/t39.30808-6/240168875_4242097112552395_8270318455870387314_n.jpg?stp=dst-jpg_s600x600&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFk9a5KnMZWF82DjLLK1_ruXhNjcgWCzi9eE2NyBYLOL8Mmp82C8s-2DLar13htfZu_Tf0KAS84lSc4Fx94EHD8&_nc_ohc=PDYk_t3EarwAX97kkRT&_nc_ht=scontent.fssz10-1.fna&oh=00_AfAlrLTLGQMPksRgm0MUQvP1OCGR4sMzKUEN9cSLk2y9Hw&oe=66126046);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.s4{
+
+    background-image: url(https://img.freepik.com/fotos-premium/uma-foto-de-uma-cidade-com-equipamentos-de-construcao-na-frente-dela_925376-426.jpg?w=740);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.s5{
+
+    background-image: url(https://italicohomes.com/wp-content/uploads/2021/09/1_1-Photo-1-768x432.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+.container-botoes-beneficions{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.198);
+    border-top: 1px solid rgba(255, 0, 0, 0.198);
+    border-right: 1px solid rgba(255, 0, 0, 0.198);
+    box-shadow: 18px 19px 29px black;
+
+    
+   
+
+
+}
+
+.bt-bnf:hover{
+    box-shadow: inset 0px 0px 10px  rgba(240, 237, 237, 0.215);
+  
+   border-right:1px solid rgb(255, 255, 255) ;
+}
+
+.titulo-lista-sobre{
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    font-size:22px;
+    padding: 20px 20px;
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+
+}
+
+.bt-bnf{
+    background: rgb(255, 248, 0);
+    background: linear-gradient(90deg, rgba(255, 248, 0, 0.8323704481792717) 0%, rgba(36, 74, 0, 0.9500175070028011) 50%, rgba(17, 20, 0, 0.626) 100%);
+ font-size:18px;
+   color: antiquewhite;
+   font-weight: bold;
+    width: 100%;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.138);
+    padding: 20px;
+    box-sizing: border-box;
+    
+    
+
+      
+}
+
+.contato{
+  width: 100%;
+margin-top: 100px;
+  height: 200px;
+  background-image: url(https://img.freepik.com/fotos-premium/projeto-da-casa-desenho-tecnico-de-fundo-ilustracao-de-projeto-de-engenharia_531521-901.jpg?w=826);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.informaçao-contato{
+    width: 50%;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+   text-align: center;
+   box-sizing: border-box;
+height: 55px;
+padding: 20px;
+
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.549) 0%, rgba(0, 11, 92, 0.62) 50%, rgba(23, 0, 39, 0.431) 100%);
+color:rgb(0, 8, 93);
+font-weight: bold;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.link-contato{
+    border-bottom: 1px solid black ;
+    height: 55px;
+     text-align: center;
+        width: 50%;
+        font-weight: bold;
+        color: #ffffff;
+        background: linear-gradient(90deg,rgba(23, 0, 39, 0.738) 0%, rgba(0, 11, 92, 1) 50%, rgba(47, 0, 82, 0.752)  100%);
+      color: rgb(0, 0, 0);
+       box-sizing: border-box;
+       display: flex;
+       justify-content: center;
+       letter-spacing: 1px;
+       transition: 2s;
+    }
+
+    .link-contato:hover{
+        box-shadow: 6px -1px 53px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 6px -1px 53px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px -1px 53px -7px rgba(0,0,0,0.75);
+transition: .6s;
+    }
+
+
+    
+   
+    .titulo-contato{
+        
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px;
+        color: #ffffff;
+      
+      
+       
+    }
+    
+    .img-contato{
+        width: 30px;
+        height: 30px;
+        margin-top: 12px;
+        margin-left: 12px
+    ;
+     
+    }
+
+    
+
+
+
+
+
+@media screen and (max-width:914px) {
+.item-servico{
+    margin: 1px 1px;
+    width: 280px;
+    font-size: 18px;
+   }
+
+}
+
+
+@media screen and (max-width:960px) {
+    .titulo-apresentaçao{
+        font-size: 18px;
+    }
+    .texto-apresentaçao{
+        font-size: 14px;
+    }
+    .texto-beneficios{
+        font-size: 14px;
+    }
+
+   
+
+    
+
+}
+
+@media screen and (max-width:730px) {
+    .titulo-apresentaçao{
+        width: 60%;
+        font-size: 14px;
+    }
+    .texto-apresentaçao{
+        width: 90%;
+        font-size: 12px;
+    }
+   
+    .titulo-item-servico{
+        font-size:14px ;
+    }
+  
+    .texto-item-servico{
+        font-size:12px ;
+    }
+
+    .bt-bnf{
+        font-size:16px;
+    }
+
+    .beneficios{
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        margin: 100px 0 ;
+    }
+.container-botoes-beneficions{
+    width: 100%;
+    height: 120px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px auto 0;
+
+   
+}
+
+.container-botoes-beneficions{
+    border: none;
+}
+
+.bt-bnf{
+    width: 45%;
+    font-size: 14px;
+    margin: 3px;
+  padding: 10px;
+    letter-spacing: 1px;
+    height:40px;
+}
+.titulo-lista-sobre{
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    font-size:18px;
+    padding: 10px 10px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+
+.slider-beneficios{
+   
+    width: 100%;
+    overflow: hidden;
+     
+
+}
+
+.item-slide-beneficios{
+     width: 100%;
+    height: 100%;
+}
+
+.item-servico {
+    background: #ffffffb9;
+    display: flex;
+    width: 95%;
+}
+
+.contato{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+
+}
+
+
+.informaçao-contato{
+    width: 80%;
+    color: white;
+    
+}
+.link-contato{
+    width: 80%;
+
+}
+.img-contato{
+    margin-right: 10px;
+}
+
+
+}
+
